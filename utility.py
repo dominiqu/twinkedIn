@@ -13,10 +13,10 @@ from math import floor, ceil
 
 def setUpLinkedInClient():
 	# specify keys (consumer: our app. user: the person logging into LinkedIn via our app (LinkedIn then gives us a placeholder user_token and user_secret to represent that user, without giving us the actual name and password of the user - although of course the username can be queried for later))
-	consumer_key     =   'uszh5pfeb54o'     # this is the API key  (the 'username' of my app when talking to LinkedIn)
-	consumer_secret  =   'pZsNH8d3omOpzrka' # this is the API secret (the 'password' of my app when talking to LinkedIn)
-	user_token       =   '1802fb97-fc3a-4dff-904a-647d989784db'  # OAuth User Token: this is the 'username' for the user that signed into the app 
-	user_secret      =   '8ad8d623-0655-48c8-869d-bcf45e3426ea'  # OAuth User secret: this is the 'password' for the user that signed into the app 
+	consumer_key     =   'xxxx'     # this is the API key  (the 'username' of my app when talking to LinkedIn)
+	consumer_secret  =   'xxxx' # this is the API secret (the 'password' of my app when talking to LinkedIn)
+	user_token       =   'xxxx'  # OAuth User Token: this is the 'username' for the user that signed into the app 
+	user_secret      =   'xxxx'  # OAuth User secret: this is the 'password' for the user that signed into the app 
 	 
 	# Use your API key and secret to instantiate consumer object (consumer object = the app = api client)
 	consumer = oauth.Consumer(consumer_key, consumer_secret)
@@ -29,10 +29,10 @@ def setUpLinkedInClient():
 
 def setUpTwitterClient():
 	# specify keys (consumer: our app. user: the person logging into LinkedIn via our app (LinkedIn then gives us a placeholder user_token and user_secret to represent that user, without giving us the actual name and password of the user - although of course the username can be queried for later))
-	consumer_key = 'FBJuTrqQWlltW23FbthcTA'
-	consumer_secret = 'NNUVmwKbV6GIIkCFON6qAMuIwaFpxaEdsylWEnCE'
-	user_token       =   '1120675440-wCc8TXO3xF1D3li68yZI66ypJ68pYrQ4H8yRicu'  # OAuth User Token: this is the 'username' for the user that signed into the app 
-	user_secret      =   'aaBKw61p9YR4mWDZwx2HTSjMeeZJtldcEk7RcWmaVPg'  # OAuth User secret: this is the 'password' for the user that signed into the app 
+	consumer_key = 'xxxx'
+	consumer_secret = 'xxxx'
+	user_token       =   'xxxx'  # OAuth User Token: this is the 'username' for the user that signed into the app 
+	user_secret      =   'xxxx'  # OAuth User secret: this is the 'password' for the user that signed into the app 
 
 	# see "Authentication" section below for tokens and keys
 	t = Twitter( auth=OAuth(user_token, user_secret, consumer_key, consumer_secret) )
